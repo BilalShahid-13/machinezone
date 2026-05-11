@@ -17,8 +17,8 @@ export async function sendEmailAction(formData: any) {
         });
 
         const mailOptions = {
-            from: `"machinezone Contact" <${process.env.EMAIL_TO}>`,
-            to: process.env.EMAIL_TO,
+            from: `"machinezone Contact" <${process.env.EMAIL_USERNAME}>`,
+            to: process.env.EMAIL_USERNAME,
             replyTo: formData.email,
             subject: `New Inquiry: ${formData.subject}`,
             html: `
